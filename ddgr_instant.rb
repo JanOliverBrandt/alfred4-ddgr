@@ -13,7 +13,7 @@ require 'json'
 require 'lightly'
 
 results = Lightly.new(life: '4h').get query do
-  JSON.parse `/usr/local/bin/googler --json -n 9 #{query}`
+  JSON.parse `/opt/homebrew/bin/ddgr --json -n 9 -r de-de #{query}`
 end
 
 output = {
